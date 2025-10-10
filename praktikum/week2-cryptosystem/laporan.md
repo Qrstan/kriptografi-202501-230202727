@@ -44,3 +44,4 @@ Contoh Algoritma:
 2. kriptografi simetris memiliki kelebihan yaitu proses enkripsi dan dekripsinya lebih cepat karena menggunakan satu kunci yang sama, namun kelemahannya adalah keamanan kunci sulit dijaga karena harus dibagikan kepada kedua pihak. Sedangkan sistem asimetris lebih aman karena menggunakan dua kunci berbeda (publik dan privat), tetapi memiliki proses yang lebih lambat dibandingkan sistem simetris.
 
 3. Distribusi kunci menjadi tantangan utama dalam kriptografi simetris karena kedua belah pihak perlu memiliki kunci yang identik, dan pengiriman kunci itu harus dilakukan dengan aman. Apabila kunci tersebut berhasil diambil atau disadap oleh pihak ketiga, maka seluruh pesan yang terenkripsi bisa diakses dan dibaca, yang mengakibatkan keamanan sistem dapat terganggu.
+![Diagram Kriptosistem](screenshots/diagram_kriptosistem.png)
