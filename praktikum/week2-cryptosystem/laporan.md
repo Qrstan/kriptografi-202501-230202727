@@ -1,95 +1,46 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 2  
+Topik: Cryptosystem 
+Nama: Hartanti  
+NIM: 230202727  
+Kelas: 5IKRA  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
----
+1.Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
+2.Menggambarkan proses enkripsi dan dekripsi sederhana.
+3.Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Komponen Kriptosistem
+Kriptosistem adalah metode yang diterapkan untuk melindungi data dengan cara menerapkan teknik enkripsi dan dekripsi. Secara umum, kriptosistem terdiri dari lima elemen inti. Plaintext merujuk pada pesan atau data asli yang perlu dilindungu, sedangkan ciphertext merupakan hasil dari enkripsi plaintext yang tidak bisa dibaca tanpa adanya knci yang tepat. Proses enkripsi dilakukan melalui algoritma matematis yang mengkonversi plaintext menjadi ciphertext, sementara algoritma dekripsi berfungsi untuk mengembalikan ciphertext menjadi plaintext yang asli. Elemen paling penting dalam kriptosistem adalah kunci, yakni parameter yang bersifat rahasia dan digunakan dalam proses enkripsi serta dekripsi. Kunci ini menentukan cara plaintxt diproses menjadi ciphertext dan sebaliknya.
+# 3 Perbedaan Kriptografi Simetris dan Asimetris
+Kriptografi Simetris 
+Kriptografi simetris memanfaatkan kunci yang sama untuk melakukan enkripsi dan dekripsi. Baik pengirim maupun penerima harus memiliki kunci yang sama dan memastikan kunci tersebut tetap terlindungi.
+Contoh Algoritma:
+1. AES (Standar Enkripsi Lanjutan)
+-Biasa diterapkan untuk: enkripsi berkas, komunikasi VPN, penyimpanan data.
+2. DES (Standar Enkripsi Data)
+-Sudah banyak digantikan oleh AES dalam beragam aplikasi.
 
----
+Kriptografi Asimetris
+Kriptografi asimetris memanfaatkan dua kunci yang berbeda: satu kunci publik untuk proses enkripsi dan satu kunci privat untuk dekripsi (atau sebaliknya untuk keperluan tanda tangan digital).
+Contoh Algoritma:
+1. RSA (Rivest-Shamir-Adleman)
+-Digunakan untuk: pertukaran kunci, tanda tangan digital, SSL/TLS.
+2. ECC (Elliptic Curve Cryptography)
+-Diterapkan dalam: Bitcoin, sistem pembayaran terkini, komunikasi seluler.
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+# Jawaban pertanyaan diskusi
+1. Komponen Utama dalam Kriptosistem:
+-Plaintext (Teks Asli)
+-Ciphertext (Teks Tersandi)
+-Kunci (Key)
+-Algoritma Enkripsi
+-Algoritma Dekripsi
+-Keyspace (Ruang Kunci)
 
----
+2. kriptografi simetris memiliki kelebihan yaitu proses enkripsi dan dekripsinya lebih cepat karena menggunakan satu kunci yang sama, namun kelemahannya adalah keamanan kunci sulit dijaga karena harus dibagikan kepada kedua pihak. Sedangkan sistem asimetris lebih aman karena menggunakan dua kunci berbeda (publik dan privat), tetapi memiliki proses yang lebih lambat dibandingkan sistem simetris.
 
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
-
----
-
-## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
-
----
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
----
-
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
-
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
+3. Distribusi kunci menjadi tantangan utama dalam kriptografi simetris karena kedua belah pihak perlu memiliki kunci yang identik, dan pengiriman kunci itu harus dilakukan dengan aman. Apabila kunci tersebut berhasil diambil atau disadap oleh pihak ketiga, maka seluruh pesan yang terenkripsi bisa diakses dan dibaca, yang mengakibatkan keamanan sistem dapat terganggu.
