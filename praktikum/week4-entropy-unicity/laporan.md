@@ -18,13 +18,18 @@ Kelas: 5IKRA
 
 ## 2. Dasar Teori
 A. Entropi dalam konteks kriptografi, adalah ukuran ketidakpastian atau keacakan dalam suatu sistem. semakin tinggi nilai entropi, semakin besar ketidakpastianya. Entropi mengukur jumlah rata-rata informasi yang dikandung oleh sumber pesan, atau dengan kata lain, mengukur tingkat ketidaktentuan (uncertainty) atau kekacauan.
-Rumus Dasar (Entropi Shannon): Untuk variabel acak diskrit *X* dengan nilai X1,X2,...,Xn dan probabilitas *P*(Xi): ![alt text](image-1.png)
+Rumus Dasar (Entropi Shannon): Untuk variabel acak diskrit *X* dengan nilai X1,X2,...,Xn dan probabilitas *P*(Xi): 
+
+![alt text](image-1.png)
+
 relevansi dalam kriptografi:
 1. Kunci (Key Entropi): Entropi ruang kunci (H(K)) mengukur seberapa acak dan tidak pasti kunci tersebut.
 2. Keacakan: Konsep entropi digunakan dalam perancangan True Random Number Generators (TRNG), yang menghasilkan bit acak dari sumber fisik (seperti noise elektronik), karena entropi yang tinggi menunjukkan keacakan sejati.
 
 B. Unicity distance adalah jumlah minimal karakter ciphertext yang dibutuhkan untuk secara teoritis menentukan kunci enkripsi secara unik oleh seorang penyerang. Jika penyerang memiliki lebih banyak karakter ciphertext daripada unicity distance, kunci yang benar akan muncul sebagai satu-satunya solusi yang masuk akal, karena semua kunci salah lainnya akan menghasilkan plaintext yang tidak bisa dibaca (tidak masuk akal).
+
 ![alt text](image-2.png)
+
 implikasi keamanan:
 - Jika ciphertext lebih pendek dari n0, mungkin ada lebih dari satu kunci yang dapat mendekripsi ciphertext menjadi plaintext yang terlihat masuk akal, sehingga kunci tidak dapat ditentukan secara unik.
 - Jika ciphertext lebih panjang dari n0, secara teoritis hanya ada satu kunci yang benar.
@@ -69,7 +74,7 @@ print("Unicity Distance untuk Caesar Cipher =", unicity_distance(HK))
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/praktikum/week4-entropy-unicity/screenshots/hasil.png)
+![Hasil Eksekusi](![Setup GitHub](screenshots/hasil.png)
 )
 
 ---
