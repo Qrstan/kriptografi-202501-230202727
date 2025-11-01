@@ -89,32 +89,14 @@ Sementara itu, Vigenère Cipher memiliki masalah dengan penggunaan kunci yang be
 
 - Pertanyaan 2: Cipher klasik rentan terhadap analisis frekuensi karena pola penggunaan huruf dalam suatu bahasa tetap nampak meskipun teks telah diproses. Dalam bahasa seperti Indonesia atau Inggris, beberapa huruf (seperti “E” atau “A”) muncul lebih dominan dibanding yang lain. Cipher kuno seperti Caesar dan Vigenère tidak mengubah pola frekuensi ini dengan cara yang berarti, sehingga penyerang dapat membandingkan distribusi huruf dari ciphertext dengan pola bahasa yang sebenarnya untuk menebak huruf-huruf tersebut dan pada akhirnya memecahkan pesan yang tersembunyi.
 
-- Pertanyaan 3: Cipher substitusi dan cipher transposisi memiliki perbedaan signifikan dalam metode enkripsi pesan mereka. Cipher substitusi berfungsi dengan menggantikan setiap karakter dalam teks asli dengan karakter lain. Kelebihan dari metode ini adalah kemudahan dalam penerapannya serta kemampuannya menciptakan ciphertext yang terlihat acak. Namun, kelemahannya terletak pada fakta bahwa pola frekuensi huruf dalam bahasa aslinya masih dapat dikenali, sehingga jenis cipher ini rentan terhadap analisis frekuensi, terutama ketika teks yang dienkripsi cukup panjang.
-
-Di sisi lain, cipher transposisi mengenkripsi pesan melalui perubahan urutan karakter tanpa merubah bentuk karakter itu sendiri. Keuntungannya adalah membuat pola pengurutan huruf jadi lebih susah untuk ditebak, sehingga sedikit lebih menantang untuk dipecahkan dibandingkan cipher substitusi yang sederhana. Namun, cipher transposisi juga memiliki kelemahan terkait kompleksitas proses enkripsi dan dekripsi, serta masih bisa rentan terhadap analisis pola jika kunci yang digunakan tidak cukup rumit atau saat pesan yang dienkripsi terlalu panjang.  
+- Pertanyaan 3: Cipher substitusi dan cipher transposisi memiliki perbedaan signifikan dalam metode enkripsi pesan mereka. Cipher substitusi berfungsi dengan menggantikan setiap karakter dalam teks asli dengan karakter lain. Kelebihan dari metode ini adalah kemudahan dalam penerapannya serta kemampuannya menciptakan ciphertext yang terlihat acak. Namun, kelemahannya terletak pada fakta bahwa pola frekuensi huruf dalam bahasa aslinya masih dapat dikenali, sehingga jenis cipher ini rentan terhadap analisis frekuensi, terutama ketika teks yang dienkripsi cukup panjang. Di sisi lain, cipher transposisi mengenkripsi pesan melalui perubahan urutan karakter tanpa merubah bentuk karakter itu sendiri. Keuntungannya adalah membuat pola pengurutan huruf jadi lebih susah untuk ditebak, sehingga sedikit lebih menantang untuk dipecahkan dibandingkan cipher substitusi yang sederhana. Namun, cipher transposisi juga memiliki kelemahan terkait kompleksitas proses enkripsi dan dekripsi, serta masih bisa rentan terhadap analisis pola jika kunci yang digunakan tidak cukup rumit atau saat pesan yang dienkripsi terlalu panjang.  
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 
+Berdasarkan kegiatan praktikum pada minggu kelima mengenai Cipher Klasik, dapat disimpulkan bahwa algoritma Caesar, Vigenère, dan Transposisi adalah metode mendasar dalam bidang kriptografi yang dirancang untuk menyandikan informasi agar tidak dapat dengan mudah diakses oleh pihak-pihak yang tidak memiliki otorisasi. Dari hasil eksperimen, ketiga algoritma ini terbukti dapat melakukan enkripsi dan dekripsi dengan akurat sesuai dengan teori yang ada. Namun, dikarenakan pola enkripsi yang masih tergolong sederhana dan batasan ruang kunci yang ada, cipher klasik memiliki kelemahan yang cukup besar terhadap serangan analisis frekuensi, sehingga tidak disarankan untuk diterapkan dalam konteks keamanan saat ini, tetapi tetap memiliki relevansi yang penting sebagai fondasi pemahaman mengenai konsep kriptografi.
 ---
 
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
 
----
 
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
