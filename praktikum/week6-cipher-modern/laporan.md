@@ -97,13 +97,7 @@ Hasil eksekusi program Caesar Cipher:
 - Pertanyaan 3: RSA dikategorikan sebagai algoritma asimetris karena menggunakan dua kunci yang berbeda untuk proses enkripsi dan dekripsi, yaitu kunci publik dan kunci privat. Kunci publik dapat dibagikan secara bebas untuk mengenkripsi data, sedangkan kunci privat harus dijaga kerahasiaannya karena digunakan untuk mendekripsi data. Dengan demikian, tidak seperti kriptografi simetris yang memakai satu kunci yang sama, RSA memisahkan peran kunci untuk meningkatkan keamanan dalam pertukaran informasi.
 
 Proses pembangkitan kunci RSA dimulai dengan memilih dua bilangan prima besar. Kedua prima tersebut dikalikan untuk membentuk modulus (n), yang menjadi dasar kekuatan RSA karena sulitnya memfaktorkan kembali hasil perkalian tersebut. Setelah itu, nilai eksponen publik (e) dipilih, kemudian dihitung nilai eksponen privat (d) sebagai kunci pasangannya. Hasil akhirnya adalah pasangan kunci (n, e) sebagai kunci publik dan (n, d) sebagai kunci privat, yang saling terkait secara matematis namun sulit diturunkan satu sama lain tanpa perhitungan yang sangat besar.
- 
 )
----
-
-## 8. Kesimpulan
-Berikut **kesimpulannya** (singkat dan sesuai format):
-
 ---
 
 ## 8. Kesimpulan
