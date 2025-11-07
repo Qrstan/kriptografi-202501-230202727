@@ -102,6 +102,13 @@ Proses pembangkitan kunci RSA dimulai dengan memilih dua bilangan prima besar. K
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Berikut **kesimpulannya** (singkat dan sesuai format):
+
+---
+
+## 8. Kesimpulan
+
+Berdasarkan praktikum yang dilakukan, dapat disimpulkan bahwa algoritma kriptografi modern memiliki peran penting dalam menjaga keamanan data. DES, AES, dan RSA memiliki perbedaan pada penggunaan kunci dan tingkat keamanannya, di mana AES lebih aman dan efisien dibanding DES, sedangkan RSA digunakan untuk pertukaran kunci dengan sistem kunci publik dan privat. Melalui implementasi ketiga algoritma ini, dapat dipahami bahwa pemilihan algoritma bergantung pada kebutuhan keamanan dan efisiensi dalam proses enkripsi dan dekripsi data.
+
 
 ---
