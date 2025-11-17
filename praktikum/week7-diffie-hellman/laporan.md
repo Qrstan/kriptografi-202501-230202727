@@ -45,7 +45,7 @@ Salin kode program utama yang dibuat atau dimodifikasi.
 Gunakan blok kode:
 
 ```python
-# # parameter umum (disepakati publik)
+# parameter umum (disepakati publik)
 p = 23  # bilangan prima
 g = 5   # generator
 
