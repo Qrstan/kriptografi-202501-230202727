@@ -41,7 +41,7 @@ Contoh format:
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
+Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
 ```python
@@ -60,7 +60,6 @@ B = pow(g, b, p)
 # exchange public key
 shared_secret_A = pow(B, a, p)
 shared_secret_B = pow(A, b, p)
-)
 
 ---
 
