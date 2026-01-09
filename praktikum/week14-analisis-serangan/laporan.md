@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: XIV 
+Topik: [Analisis Serangan Kriptografi]  
+Nama: [Hartanti]  
+NIM: [230202727]  
+Kelas: [5IKRA]  
 
 ---
 
