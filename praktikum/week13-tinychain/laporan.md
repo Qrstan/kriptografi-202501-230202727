@@ -1,20 +1,26 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: XIII  
+Topik: TinyChain – Proof of Work (PoW)  
+Nama: Hartanti  
+NIM: 230202727  
+Kelas: 5IKRA  
 
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Menjelaskan peran hash function dalam blockchain.
+2. Melakukan simulasi sederhana Proof of Work (PoW).
+3. Menganalisis keamanan cryptocurrency berbasis kriptografi.
 
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Blockchain merupakan teknologi buku besar terdistribusi (distributed ledger) yang menyimpan data transaksi dalam bentuk blok-blok yang saling terhubung menggunakan fungsi hash kriptografis. Keamanan blockchain bergantung pada prinsip kriptografi, desentralisasi, dan konsensus. Setiap blok berisi hash blok sebelumnya sehingga perubahan pada satu blok akan memengaruhi seluruh rantai, membuat manipulasi data menjadi sangat sulit. Selain itu, karena data disalin dan diverifikasi oleh banyak node dalam jaringan, tidak ada satu pihak pun yang dapat dengan mudah mengendalikan atau mengubah isi blockchain secara sepihak.
+
+Proof of Work (PoW) adalah mekanisme konsensus yang digunakan untuk menjaga keamanan dan integritas blockchain dengan mewajibkan node (miner) memecahkan teka-teki kriptografis yang membutuhkan daya komputasi tinggi. Proses ini memastikan bahwa penambahan blok baru memerlukan usaha nyata (work), sehingga serangan seperti pemalsuan transaksi atau perubahan riwayat blockchain menjadi sangat mahal dan tidak efisien. PoW juga mencegah serangan spam karena setiap transaksi harus divalidasi melalui proses penambangan.
+
+Dari sisi keamanan, PoW efektif dalam melindungi blockchain dari serangan seperti double spending dan modifikasi data, selama mayoritas kekuatan komputasi (lebih dari 50%) dikuasai oleh node yang jujur. Namun, PoW memiliki kelemahan berupa konsumsi energi yang tinggi dan potensi sentralisasi penambangan pada pihak dengan sumber daya besar. Oleh karena itu, meskipun PoW terbukti kuat secara keamanan, pengembang blockchain terus mengeksplorasi mekanisme konsensus alternatif yang lebih efisien tanpa mengorbankan aspek keamanan.
+
 
 ---
 
@@ -29,9 +35,10 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat Struktur Blok
+2. Membuat Blockchain
+3. Analisis Proof of Work
+)
 
 ---
 
@@ -40,9 +47,13 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+# Uji coba blockchain
+my_chain = Blockchain()
+print("Mining block 1...")
+my_chain.add_block(Block(1, "", "Transaksi A → B: 10 Coin"))
+
+print("Mining block 2...")
+my_chain.add_block(Block(2, "", "Transaksi B → C: 5 Coin"))
 ```
 )
 
@@ -65,31 +76,13 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Fungsi hash sangat penting dalam blockchain karena berperan sebagai mekanisme pengaman data. Hash mengubah data transaksi menjadi nilai unik dengan panjang tetap, sehingga setiap perubahan kecil pada data akan menghasilkan hash yang berbeda secara signifikan. Hal ini menjamin integritas data, memudahkan proses verifikasi blok, serta menghubungkan antarblok melalui previous_hash, sehingga perubahan pada satu blok akan merusak seluruh rantai.  
+- Pertanyaan 2: Proof of Work (PoW) mencegah double spending dengan mewajibkan penambang melakukan komputasi yang mahal untuk memvalidasi dan menambahkan blok baru. Setiap transaksi hanya dianggap sah setelah masuk ke dalam blok yang berhasil ditambang dan terkonfirmasi oleh jaringan. Untuk mengubah atau menggandakan transaksi, penyerang harus mengulang proses PoW pada blok tersebut dan seluruh blok setelahnya, yang secara komputasi hampir tidak mungkin dilakukan tanpa menguasai mayoritas daya komputasi jaringan.  
+- Pertanyaan 3: Kelemahan PoW dalam hal efisiensi energi terletak pada kebutuhan komputasi yang sangat tinggi. Proses pencarian nonce menyebabkan banyak percobaan hash yang sebagian besar sia-sia, sehingga mengonsumsi listrik dalam jumlah besar. Akibatnya, PoW dianggap tidak ramah lingkungan dan kurang efisien, terutama ketika jaringan blockchain semakin besar dan tingkat kesulitannya terus meningkat.  
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+(Berdasarkan percobaan yang dilakukan, sistem blockchain sederhana berhasil diimplementasikan dengan memanfaatkan fungsi hash SHA-256 dan mekanisme Proof of Work. Hasil pengujian menunjukkan bahwa setiap blok hanya dapat ditambahkan setelah memenuhi tingkat kesulitan tertentu, sehingga menjamin integritas dan keterkaitan antarblok. Dengan demikian, percobaan ini membuktikan bahwa blockchain mampu menjaga keamanan data transaksi melalui proses komputasi yang terverifikasi. )
 
 ---
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
